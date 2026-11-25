@@ -21,7 +21,7 @@ functions/
 
 ## Cara merilis versi baru
 
-1. Di repo `Alfin-Olyuno/olyuno`: Releases > Draft a new release, isi tag (misal `v1.7.0`).
+1. Di repo `Alfin-Olyuno/olyuno`: Releases > Draft a new release, isi tag (misal `v1.0.0`).
 2. Lampirkan file APK. Nama bebas, asal berakhiran `.apk` dan tidak mengandung "debug".
    Disarankan juga ada satu file bernama persis `Olyuno.apk` sebagai cadangan.
 3. Tulis catatan rilis (markdown) di deskripsi release. Isinya otomatis tampil di `/changelog`.

@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Olyuno – Pemutar musik Android dengan lirik tersinkron</title>
-  <meta name="description" content="Olyuno adalah pemutar musik Android gratis dengan lirik tersinkron dari empat sumber, Cari lagu lewat suara, Dynamic Island, dan streak harian. Unduh APK-nya di sini.">
+  <meta name="description" content="Olyuno adalah pemutar musik Android gratis dengan lirik tersinkron dan Cari lagu lewat suara. Unduh APK-nya di sini.">
   <meta name="theme-color" content="#010D2D">
   <link rel="canonical" href="https://olyuno.my.id/">
   <link rel="icon" href="/favicon.ico" sizes="any">
@@ -28,16 +28,16 @@
 <body data-page="home">
   <a class="skip" href="#fitur">Lompat ke konten</a>
 
-  <header class="top">
+  <header class="top glass">
     <a class="brand" href="/" aria-label="Olyuno, beranda">
-      <img src="/assets/logo.png" width="40" height="40" alt="">
+      <img src="/assets/logo.png" width="34" height="34" alt="">
       <span>Olyuno</span>
     </a>
     <nav aria-label="Utama">
-      <a href="#fitur">Fitur</a>
-      <a href="#unduh">Cara pasang</a>
-      <a href="/changelog">Changelog</a>
-      <a href="https://github.com/Alfin-Olyuno/olyuno" target="_blank" rel="noopener">GitHub</a>
+      <a class="nav-link" href="#fitur">Fitur</a>
+      <a class="nav-link" href="#pasang">Cara pasang</a>
+      <a class="nav-link" href="https://github.com/Alfin-Olyuno/olyuno" target="_blank" rel="noopener">GitHub</a>
+      <a class="nav-cta" href="/download" data-download>Unduh</a>
     </nav>
   </header>
 
@@ -45,127 +45,94 @@
     <section class="hero">
       <div class="hero-copy">
         <h1>Putar lagunya.<br>Liriknya ikut jalan.</h1>
-        <p class="lede">Olyuno adalah pemutar musik untuk Android. Liriknya tersinkron dari empat sumber, dan kalau lupa judulnya, cukup nyanyikan potongan liriknya.</p>
-        <div class="cta">
-          <a class="btn btn-primary" href="/download" data-download>
-            Unduh Olyuno
-            <span class="chip" data-version>v1.7.0</span>
-          </a>
-          <a class="btn btn-ghost" href="https://github.com/Alfin-Olyuno/olyuno" target="_blank" rel="noopener">Lihat di GitHub</a>
-        </div>
-        <p class="meta">
-          <span>Gratis</span>
-          <span>Android 8.0 ke atas</span>
-          <span data-size hidden></span>
-        </p>
-      </div>
+        <p class="lede">Pemutar musik untuk Android dengan lirik tersinkron dan pencarian lagu lewat suara.</p>
 
-      <div class="stage" data-stage>
-        <div class="lyrics" aria-label="Contoh lirik tersinkron, lirik contoh buatan sendiri">
-          <ol data-lines>
-            <li><button type="button"><span>Lampu kota menyala</span></button></li>
-            <li><button type="button"><span>Pulang tanpa terburu</span></button></li>
-            <li><button type="button"><span>Radio kecil bernyanyi</span></button></li>
-            <li><button type="button"><span>Lagu yang belum usai</span></button></li>
-            <li><button type="button"><span>Jendela terbuka lebar</span></button></li>
-            <li><button type="button"><span>Tak ingin berhenti</span></button></li>
-          </ol>
-        </div>
-        <div class="stage-foot">
-          <div class="eq" aria-hidden="true"><i></i><i></i><i></i></div>
-          <div class="sources" role="group" aria-label="Pilih sumber lirik">
-            <button type="button" aria-pressed="true">Lyrics Plus</button>
-            <button type="button" aria-pressed="false">Better Lyrics</button>
-            <button type="button" aria-pressed="false">BiniLyrics</button>
-            <button type="button" aria-pressed="false">LRCLIB</button>
+        <div class="getbar glass">
+          <a class="btn" href="/download" data-download>Unduh APK</a>
+          <div class="getinfo">
+            <span data-version>v1.0.0</span>
+            <span>Android 8.0 ke atas, gratis</span>
+            <span data-size hidden></span>
           </div>
         </div>
+      </div>
+
+      <div class="hero-mark" aria-hidden="true">
+        <svg class="mark" viewBox="0 0 200 200" width="360" height="360" focusable="false">
+          <defs>
+            <linearGradient id="ring" x1="0.1" y1="0.05" x2="0.9" y2="0.95">
+              <stop offset="0" stop-color="#22ecf5"/>
+              <stop offset="0.55" stop-color="#1fb8ff"/>
+              <stop offset="1" stop-color="#1f74ff"/>
+            </linearGradient>
+            <linearGradient id="swirl" x1="0" y1="0" x2="1" y2="1">
+              <stop offset="0" stop-color="#6ff6ff" stop-opacity="0.9"/>
+              <stop offset="1" stop-color="#1fb8ff" stop-opacity="0"/>
+            </linearGradient>
+            <linearGradient id="glyph" x1="0" y1="0" x2="1" y2="1">
+              <stop offset="0" stop-color="#22ecf5"/>
+              <stop offset="1" stop-color="#2a7fff"/>
+            </linearGradient>
+            <clipPath id="disc"><circle cx="100" cy="100" r="100"/></clipPath>
+          </defs>
+          <circle cx="100" cy="100" r="100" fill="url(#ring)"/>
+          <g clip-path="url(#disc)">
+            <circle cx="86" cy="92" r="88" fill="url(#swirl)"/>
+            <circle cx="122" cy="118" r="92" fill="none" stroke="#7ff3ff" stroke-opacity="0.35" stroke-width="10"/>
+          </g>
+          <circle cx="100" cy="100" r="57" fill="#050d33"/>
+          <g transform="translate(-8 0)">
+            <path d="M70 78 L70 122 L104 100 Z" fill="url(#glyph)" stroke="url(#glyph)" stroke-width="8" stroke-linejoin="round"/>
+            <rect class="bar b1" x="113" y="80" width="9" height="40" rx="4.5" fill="#22ecf5"/>
+            <rect class="bar b2" x="128" y="71" width="9" height="58" rx="4.5" fill="#3ec9ff"/>
+            <rect class="bar b3" x="143" y="84" width="9" height="32" rx="4.5" fill="#2a7fff"/>
+          </g>
+        </svg>
       </div>
     </section>
 
     <section class="features" id="fitur" aria-labelledby="fitur-h">
       <h2 id="fitur-h">Yang bisa dilakukan Olyuno</h2>
-      <ul class="rows">
+      <ul class="feat">
         <li>
-          <h3>Cari lagu dengan suara</h3>
-          <p>Nyanyikan atau ucapkan potongan liriknya. Olyuno mengenali kata-katanya, lalu mencarikan lagunya. Kamu bisa mengedit hasil tangkapannya sebelum mencari.</p>
+          <h3>Lirik tersinkron</h3>
+          <p>Lirik mengikuti lagu dari empat sumber, dan bisa diterjemahkan.</p>
         </li>
         <li>
-          <h3>Lirik dari empat sumber</h3>
-          <p>Lyrics Plus, Better Lyrics, BiniLyrics, dan LRCLIB. Pilih salah satu, atau biarkan Otomatis memilih hasil yang paling cocok. Liriknya bisa diterjemahkan dan dicari.</p>
+          <h3>Cari lagu dengan suara</h3>
+          <p>Nyanyikan potongan liriknya, Olyuno carikan lagunya.</p>
         </li>
         <li>
           <h3>Dynamic Island</h3>
-          <p>Info lagu melayang di atas aplikasi lain. Warna, bentuk, lebar, dan lengkung kartunya bisa kamu atur sendiri.</p>
+          <p>Info lagu melayang di atas aplikasi lain.</p>
         </li>
         <li>
-          <h3>Streak dan Rekap</h3>
-          <p>Dengarkan musik tiap hari untuk menjaga streak. Freeze menyelamatkan streak saat sehari terlewat. Rekap lagu dan artis teratasmu bisa dibagikan.</p>
-        </li>
-        <li>
-          <h3>Tanya AI</h3>
-          <p>Bahas arti sebuah lirik dengan Gemini dari Google. Kamu memakai kunci API sendiri, dan judul, artis, serta lirik yang dianalisis dikirim ke Google.</p>
-        </li>
-        <li>
-          <h3>Unduh dan hemat data</h3>
-          <p>Simpan lagu untuk didengar tanpa internet. Mode Hemat data menurunkan kualitas audio dan hanya mengunduh lewat Wi-Fi.</p>
-        </li>
-        <li>
-          <h3>Atur sesuai selera</h3>
-          <p>Ekualiser dengan penguat bass, timer tidur yang memudarkan volume, pilihan warna dan gaya tampilan, serta dukungan refresh rate tinggi.</p>
-        </li>
-        <li>
-          <h3>Akun dan cadangan</h3>
-          <p>Masuk dengan Google untuk membawa playlist, lagu disukai, artis, album, dan podcast dari YouTube Music. Data aplikasi bisa diekspor dan diimpor.</p>
+          <h3>Streak harian</h3>
+          <p>Dengarkan musik tiap hari, lalu bagikan rekapnya.</p>
         </li>
       </ul>
     </section>
 
-    <section class="install" id="unduh" aria-labelledby="unduh-h">
-      <div class="install-inner">
-        <div class="install-main">
-          <h2 id="unduh-h">Pasang Olyuno di HP kamu</h2>
-          <p>Olyuno dibagikan sebagai file APK, bukan lewat Play Store. Filenya langsung diunduh dari sini.</p>
-          <a class="btn btn-solid" href="/download" data-download>
-            Unduh APK
-            <span class="chip" data-version>v1.7.0</span>
-          </a>
-          <p class="meta meta-dark">
-            <span>Android 8.0 ke atas</span>
-            <span data-size hidden></span>
-          </p>
-        </div>
-
-        <div class="install-side">
-          <h3>Langkah pemasangan</h3>
-          <ol class="steps">
-            <li>Ketuk <strong>Unduh APK</strong>, lalu buka file yang selesai diunduh.</li>
-            <li>Kalau Android meminta, izinkan browser kamu memasang aplikasi dari luar Play Store.</li>
-            <li>Ketuk <strong>Instal</strong>, lalu buka Olyuno.</li>
-            <li>Izinkan mikrofon dan notifikasi kalau mau memakai Cari lagu dan pengingat streak.</li>
-          </ol>
-
-          <h3>Izin yang diminta Olyuno</h3>
-          <dl class="perms">
-            <dt>Mikrofon</dt><dd>Untuk Cari lagu lewat suara.</dd>
-            <dt>Notifikasi</dt><dd>Kontrol musik, progres unduhan, dan pengingat streak.</dd>
-            <dt>Tampil di atas aplikasi lain</dt><dd>Untuk Dynamic Island.</dd>
-            <dt>Audio perangkat</dt><dd>Untuk memutar lagu yang ada di HP.</dd>
-          </dl>
-        </div>
+    <section class="install" id="pasang" aria-labelledby="pasang-h">
+      <div class="install-panel glass">
+        <h2 id="pasang-h">Cara pasang</h2>
+        <ol class="steps">
+          <li>Unduh APK, lalu buka filenya.</li>
+          <li>Kalau diminta, izinkan browser memasang aplikasi dari luar Play Store.</li>
+          <li>Ketuk <strong>Instal</strong>, lalu buka Olyuno.</li>
+        </ol>
+        <p class="note">Olyuno meminta izin mikrofon untuk Cari lagu, notifikasi untuk kontrol musik, dan tampil di atas aplikasi lain untuk Dynamic Island.</p>
+        <a class="btn" href="/download" data-download>Unduh APK</a>
       </div>
     </section>
   </main>
 
   <footer class="foot">
-    <div class="foot-inner">
-      <p>Dibuat oleh PINZZ.</p>
-      <p class="fine">Olyuno adalah proyek independen dan tidak berafiliasi dengan YouTube atau Google.</p>
-      <nav aria-label="Footer">
-        <a href="https://github.com/Alfin-Olyuno/olyuno" target="_blank" rel="noopener">GitHub</a>
-        <a href="/changelog">Changelog</a>
-      </nav>
-    </div>
+    <p>Dibuat oleh PINZZ. Olyuno adalah proyek independen dan tidak berafiliasi dengan YouTube atau Google.</p>
+    <nav aria-label="Footer">
+      <a href="https://github.com/Alfin-Olyuno/olyuno" target="_blank" rel="noopener">GitHub</a>
+      <a href="/changelog">Changelog</a>
+    </nav>
   </footer>
 </body>
 </html>
